@@ -8,7 +8,7 @@ body{
     flex-direction:column;
     align-items: center;
 }
-.game-window{
+/*.game-window{
     height: 150px;
     width: 200px;
     background-color: white;
@@ -19,11 +19,17 @@ body{
     text-align: center;
     margin-top: 50px;
 }
-.game-window:hover{
+/*.game-window:hover{
     background-color: aqua;
     border-color: rgb(115, 58, 58);
     cursor:pointer;
-}
+}*/
 .input-container{
     margin-top: 30px;
+}
+#button{
+    height: 30px;
+    width: 50px;
+    background-color: aquamarine;
+    border: 10px;
 }
