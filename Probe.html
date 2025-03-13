@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <script>
+        var g = 9.81, v0, winkel, wurfweite, i;
+        var distanzMonster = Math.random() * 90 + 10;
+        distanzMonster = Math.ceil(distanzMonster);
+ 
+        console.log(distanzMonster);
+        for(i = 1; i < 4; i++){
+            v0 = prompt("Gib die Anfangsgeschwindigkeit v0 ein.");
+            winkel = prompt("Gebe den Wurfwinkel ein", "zwischen 1 und 90 Grad");
+            winkel = winkel * (Math.PI / 180);
+            wurfweite = ((v0 ** 2) * Math.sin(2 * winkel)) / g;
+            wurfweite = Math.round(wurfweite);
+            console.log(`Die Wurfweite beträgt ${wurfweite} m.`);
+
+            if (i<3){ 
+                if (wurfweite == distanzMonster) {
+                    alert("Du hast das Monster getroffen.");
+                }
+                else {
+                    if (distanzMonster > wurfweite){
+                        let differenz = distanzMonster - wurfweite
+                        alert("Das Monster wurde nicht getroffen");
+                        alert(`Die Monster ist   ${differenz} meter vorne von deine Stein `)
+                    }
+                    else{
+                        let differenz = wurfweite - distanzMonster
+                        alert("Das Monster wurde nicht getroffen");
+                        alert(`Deine Stein ist   ${differenz} meter vorne von der Monster`)
+                    }
+                
+                    }
+                }
+            
+            else { if (wurfweite == distanzMonster) {
+                    alert("Du hast das Monster getroffen.");
+                    }
+                else {
+                    if (distanzMonster > wurfweite){
+                        let differenz = distanzMonster - wurfweite
+                        alert("Das Monster wurde nicht getroffen");
+                        alert(`Die Monster ist   ${differenz} meter vorne von deine Stein `)
+                        alert("GAME OVER")
+                    }
+                    else{
+                        let differenz = wurfweite - distanzMonster
+                        alert("Das Monster wurde nicht getroffen");
+                        alert(`Deine Stein ist   ${differenz} meter vorne von der Monster`)
+                        alert("GAME OVER")
+                    }
+                
+                    }
+                
+                }
+            }
+    </script>
+</body>
