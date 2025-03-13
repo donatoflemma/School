@@ -1,0 +1,29 @@
+body{
+    background-color: blanchedalmond;
+}
+.houpt-div{
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.game-window{
+    height: 150px;
+    width: 200px;
+    background-color: white;
+    border: 10px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+.game-window:hover{
+    background-color: aqua;
+    border-color: rgb(115, 58, 58);
+    cursor:pointer;
+}
+.input-container{
+    margin-top: 30px;
+}
