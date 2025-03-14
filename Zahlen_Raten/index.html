@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
     <link rel="stylesheet" href="./index.css">
-    <script src="./index.js"></script>
     <title>Zahlen Raten</title>
 </head>
 <body>
@@ -13,21 +13,18 @@
             <h1 id ="game-text1">
                 Zahlen Raten
             </h1>
-            <h2 id="answer"></h2>
             <p id="game-text2">
                 Press the window for play <br>
                 and Enter for see if u win 
             </p>
         </div>
-        <div class="input-container">
-            <!--<form onsubmit="return checkInput();"> -->
+        <div class="input-container"  >
+            <form onsubmit="return checkInput();"> 
                 <!-- Eingabefeld -->
                 <input id="input" class="input-window" type="text">
-                <button id="button" type="button" onclick="checkInput();">
-                    press start for play
-                </button>
-            <!--</form>-->
+            </form>
         </div>
+        <h1 id="Lose"></h1>
     </div>
 </body>
 </html>

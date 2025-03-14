@@ -7,8 +7,9 @@ body{
     display: flex;
     flex-direction:column;
     align-items: center;
+    gap: 20px;
 }
-/*.game-window{
+.game-window{
     height: 150px;
     width: 200px;
     background-color: white;
@@ -17,9 +18,9 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 90px;
 }
-/*.game-window:hover{
+.game-window:hover{
     background-color: aqua;
     border-color: rgb(115, 58, 58);
     cursor:pointer;
@@ -32,4 +33,10 @@ body{
     width: 50px;
     background-color: aquamarine;
     border: 10px;
+}
+#answer{
+    font-size: 20px;
+}
+#Lose{
+    font-size: 30px;
 }
