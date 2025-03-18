@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="./index.js"></script>
+    <title>RockPaperScissors</title>
+</head>
+<body>
+    <h1>RockPaperScissors</h1>
+    <h2 id = "result"></h2>
+    <div id="resultScore">
+        <div id="resultGamer"><h2 id="ScoreGamer">0</h2></div>
+        <div id="resultComputer"><h2 id="ScoreComputer">0</h2></div>
+    </div>
+    <div>
+        <div id="conteiner">
+            <div id="Gamer">
+                <div id="gamer-choose">
+                    <img id="imgGgamer" src="./img/Rock.png" alt="image not found" >
+                </div>
+            </div>
+            <div id="emoticon">
+                <img id="face" src="./img/vs.png" alt="image not found">
+            </div>
+            <div id="Computer">
+                <div id="computer-choose">
+                    <img id="random" src=""  alt="image not found">
+                </div>
+            </div>
+        </div>
+        <div id="choose">
+            <div id="img">
+                <img class="example" src="./img/Rock.png" alt="image not found" onclick="bild(0);">
+                <img class="example" src="./img/Paper.png" alt="image not found" onclick="bild(1);">
+                <img class="example" src="./img/Scissors.png" alt="image not found" onclick="bild(2);">
+            </div>
+            <button id="play">
+                Press
+            </button>
+            <script>document.getElementById("play").addEventListener("click", Start);</script>
+        </div>
+    </div>
+    
+</body>
+</html>
