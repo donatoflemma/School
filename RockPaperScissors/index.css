@@ -5,21 +5,27 @@ body{
     align-items: center;
     padding: 0%;
 }
+img{
+    height: 100%;
+    width: 100%;
+}
 h1{
 color: white; 
 text-shadow: 2px 2px 4px #000000; 
-font-size: 50px;
+font-size: 400%;
+margin-top: 0%;
 }
 h2{
 color: white; 
 text-shadow: 2px 2px 4px #000000; 
-font-size: 30px;
+font-size: 200%;
+margin-top: 0px;
 }
 #resultScore{
-    height: 10%;
     width: 100%;
     display: flex;
     grid-column: 1fr 1fr;
+    padding-bottom: 1%;
 }
 #resultGamer{
     width: 100%;
@@ -28,64 +34,68 @@ font-size: 30px;
 }
 #resultComputer{
     width: 100%;
-    grid-column-start:1 ;
-    grid-column-end: 2;
+    grid-column-start:2 ;
+    grid-column-end: 3;
 }
 #ScoreGamer{
     position: relative;
-    margin-left: 48%;
+    margin-left: 55%;
+    font-size: 2vw;
 }
 #ScoreComputer{
     position: relative;
-    margin-left: 48%;
+    margin-left:43%;
+    font-size: 2vw;
 }
-
-
-
 #conteiner{
     width: 100vw;
-    height: 40vh;
+    height: 50vh;
     display: grid;
-    grid-template-columns: 4fr 2fr 4fr;
+    grid-template-columns: 3fr 2fr 3fr;
 }
 #Gamer{
-    background-color: blueviolet;
-    grid-column-start: 1;
+    
+    height: 60%;
+    width: 100%;
+   grid-column-start: 1;
     grid-column-end: 2;
     display: flex;
     align-items:center;
     justify-content: end;
+    
 }
 #gamer-choose{
-    background-color: rgb(15, 110, 194);
-    height: 90%;
+    background-color: rgb(18, 130, 228);
+    height: 70%;
     width: 50%;
     display: flex;
     justify-content: center;
     border: 5px solid white;
     border-radius: 5%;
     box-shadow: 20px 10px 5px rgb(118, 148, 158);
-    margin-right: 10%;
-    
-    
+    margin-bottom: 26%;
 }
 #emoticon{
+    
     grid-column-start: 2;
     grid-column-end: 3;
     display: flex;
     align-items:center;
+    justify-content: center;
     
 }
-#face{
-    height: 40%;
-    width: 100%;
+#face-box{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 80%;
     
 }
-
-
-
 #Computer{
-    background-color: blueviolet;
+    height: 60%;
+    width: 100%;
     grid-column-start: 3;
     grid-column-end: 4;
     display: flex;
@@ -93,28 +103,27 @@ font-size: 30px;
     justify-content:start;
 }
 #computer-choose{
-    background-color:rgb(15, 110, 194);
-    height: 90%;
+    background-color:rgb(18, 130, 228);
+    height: 70%;
     width: 50%;
     display: flex;
     justify-content: center;
     border: 5px solid white;
     border-radius: 5%;
     box-shadow: 20px 10px 5px rgb(118, 148, 158);
-    margin: 10%;
+    margin-bottom: 26%;
 }
 
-
-
 #choose{
-    margin-top:30px ;
-    height: 20vh;
+    height: 30vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
-    
+    position: absolute;
+    top: 67%;
 }
+
 #img{
     height: 60%;
     width: 100%;
@@ -124,11 +133,25 @@ font-size: 30px;
     gap: 100px;
     
 }
-button{
+.example{
+    height:70%;
+    cursor: pointer;
+    width: 7%;
+}
+#play{
+    background-color: #007bff;
+    transition: background-color 0.3s;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
     position: relative;
     top: 1vh;
-    height: 20px;
-    width: 60px;
-    margin-left: 48%;
-    margin-top: 20px;
+    height: 30px;
+    width: 80px;
+    margin-left: 49%;
+    cursor: pointer;
+    border: none;
+}
+#play:hover {
+    background-color: #0056b3;
 }
