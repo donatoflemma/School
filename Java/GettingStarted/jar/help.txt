@@ -1,0 +1,22 @@
+jar cmfv main.txt MyPrj.jar *.class		"jar file erstellen mit Manifest"
+jar xf MyPrj.jar				"Inhalt auspacken"
+jar tf MyPrj.jar				"Inhalt auflisten"
+
+-------------------------------
+// erzeuge jar file (archive)
+jar cfv MyGreeting.jar Greeting.class
+
+// compile Hello.java using the archive MyGreeting.jar
+javac -cp MyGreeting.jar Hello.java
+
+// execute Hello.class using the archive MyGreeting.jar
+java -cp .;MyGreeting.jar Hello
+
+--------------------------------
+// create an executable jar 
+jar cmfv main.txt MyPrj.jar *.class
+
+// run the executable jar
+java -jar MyPrj.jar				"jar archive ausführen"	als executable jar
+
+---------------------------------

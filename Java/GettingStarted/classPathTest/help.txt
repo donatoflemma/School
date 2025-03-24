@@ -1,0 +1,5 @@
+javac -cp CompilerTest2 CompilerTest\HelloX.java
+java -cp CompilerTest2;CompilerTest HelloX
+
+
+

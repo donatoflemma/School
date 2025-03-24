@@ -1,0 +1,3 @@
+javac p1/HelloX.java
+java p1.HelloX
+
