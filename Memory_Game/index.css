@@ -1,0 +1,176 @@
+body{
+    background-color: rgb(75, 50, 50);
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#conteiner{
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    background-color: rgb(191, 202, 212);
+    height: 90%;
+    width: 96%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    padding-top: 1%;
+}
+/*####################################### first Column ###############################################################*/
+#h1_button{
+   
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Alphabet{
+    
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#geometric{
+   
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Vegetables{
+    
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.change{
+    height: 80%;
+    width: 30%;
+    border: none;
+    border-radius: 8%;
+    cursor: pointer;
+    box-shadow: 20px 10px 5px rgb(118, 148, 158);
+}
+#reset{
+    position: relative;
+    top: 30%;
+    cursor: pointer;
+    border: none;
+    border-radius: 10%;
+    color: salmon;
+    background-color:rgb(62, 29, 5);
+}
+
+/*####################################### second Column ##############################################################*/
+#firstRow{
+    
+    height: 90%;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    
+}
+#secondRow{
+   
+    height: 90%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+ 
+}
+#thirdRow{
+   
+    height: 90%;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    
+}
+#fourthtRow{
+   
+    height: 90%;
+    margin-bottom: 1%;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.card{
+    background-color: rgb(252, 252, 252);
+    height: 96%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    border: 2px solid salmon;
+    cursor: pointer;
+    box-shadow: 20px 10px 5px rgb(118, 148, 158);
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+/*.card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+  }
+
+
+*/
+/*#####################################################################################################*/
+
+img{
+    height: 90%;
+    width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
