@@ -10,8 +10,10 @@ class OpTest {
      
       //System.out.println((y = true));
 
-      if((z++ == 42) && (y == true))  z++;
-      if((x == false) || (++z == 45)) z++;
+      if((z++ == 42) && (y == true))  
+        z++;
+      if((x == false) || (++z == 45)) 
+        z++;
 
       System.out.println("z = " + z);
     }

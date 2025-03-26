@@ -1,4 +1,4 @@
-package input_output;
+package Java.Basics.input;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class MitScanner {
 			Scanner s = new Scanner(System.in);
 			String eingabe = s.next();
         	
-			// prüfen ob der eingegeber String ein integer ist:
+			// prï¿½fen ob der eingegeber String ein integer ist:
         	try {
         		Integer.parseInt(eingabe);
         		System.out.println(eingabe + " Danke");
@@ -24,7 +24,7 @@ public class MitScanner {
         		System.out.println("das war kein Integer - versuch es noch einmal");
         	}
 		}
-		System.out.println("und tschüss");
+		System.out.println("und tschï¿½ss");
 
 	}
 
