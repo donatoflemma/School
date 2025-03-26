@@ -1,3 +1,5 @@
+package Java.Basics.input;
+
 import java.util.Scanner;
 
 public class Bruttoeinkommen {
