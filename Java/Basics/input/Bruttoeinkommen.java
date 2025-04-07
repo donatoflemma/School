@@ -7,6 +7,8 @@ public class Bruttoeinkommen {
         System.out.println("Geben Sie den Bruttoeinkommen an :");
         Scanner Bruttoeinkom = new Scanner(System.in);
         Bruttoeinkom.close(); // Chiude il Scanner dopo l'utilizzo
+        int eingabe = s.nextInt();
+
     }
 
 }
